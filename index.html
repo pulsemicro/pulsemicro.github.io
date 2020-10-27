@@ -1,69 +1,291 @@
 <!doctype html>
 <html lang="en" class="mac">
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta http-equiv="content-language" content="en-gb">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="style.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <div class="container-new py-6 px-3 text-center">
+            <a href="/">
+            <img src="https://camo.githubusercontent.com/817cfe7a9063d515c76981e2e244629546c5ffc0/68747470733a2f2f7777772e70756c73656d6963726f2e636f6d2f696d616765732f50756c73654c6f676f486f72697a6f6e74616c536d616c6c2e706e67" alt="PulseID v3">
+            </a>
+            <!-- <ul class="nav list-style-none d-flex flex-justify-center f4">
+               <li>
+                  <a class="d-inline-block m-2" href="/">Overview</a>
+               </li>
+               <li>
+                  <a class="d-inline-block m-2 current" href="/release-notes/">Release Notes</a>
+               </li>
+               <li>
+                  <a class="d-inline-block m-2" href="https://help.github.com/desktop/">Help</a>
+               </li>
+            </ul> -->
+         </div>
+      </header>
+      <div class="container-new">
+         <div class="col-md-8 mx-auto">
+            <div class="p-3 mb-4 border-bottom border-translucent-white">
+               <h1 class="f1-light text-white">
+                Release notes for PulseID version 3
+               </h1>
+            </div>
+            <div id="release-notes">
+                <section class="release-note position-relative container-new py-6 px-3 text-left">
+                    <header class="timeline-decorator d-flex flex-items-center mb-3">
+                       <span class="version-badge d-inline-block bg-purple p-1 rounded-1 mr-2 text-bold">3.0.0</span>
+                       <span class="d-inline-block bg-yellow text-gray-dark p-1 rounded-1 mr-2 text-bold">2020.296.3.423 2f354b5</span>
+                       <h2 class="f3-light css-truncate css-truncate-target">October 22nd 2020</h2>
+                    </header>
+                    <ul class="list-style-none change-log">
+                      <li class="d-flex flex-items-start mb-2">
+                          <div class="change-badge change-badge-build">Build</div>
+                          <div class="change-description">\\S1\Install\PulseID\bin\JenkinsBuilds\PulseID-Build\2020.296\423</div>
+                       </li>
+                       <li class="d-flex flex-items-start mb-2">
+                          <div class="change-badge change-badge-added">Added</div>
+                          <div class="change-description">Support different file types depending on the fulfillment center | <a href="https://app.asana.com/0/1178545619648021/1198568175712293/f">Asana</a> | <a href="https://github.com/pulsemicro/PulseID/issues/1038">GitHub #1038</a></div>
+                       </li>
+                       <li class="d-flex flex-items-start mb-2">
+                          <div class="change-badge change-badge-added">Added</div>
+                          <div class="change-description">MWW - Auto download file from Amazon S3 | <a href="https://app.asana.com/0/1178545619648021/1198562824713559/f">Asana</a> | <a href="https://github.com/pulsemicro/PulseID/issues/1038">GitHub #1038</a></div>
+                       </li>
+                    </ul>
+                 </section>
+                <section class="release-note position-relative container-new py-6 px-3 text-left">
+                    <header class="timeline-decorator d-flex flex-items-center mb-3">
+                       <span class="version-badge d-inline-block bg-purple p-1 rounded-1 mr-2 text-bold">3.0.0</span>
+                       <span class="d-inline-block bg-yellow text-gray-dark p-1 rounded-1 mr-2 text-bold">22020.293.3.416 6bdf7d2</span>
+                       <h2 class="f3-light css-truncate css-truncate-target">October 19th 2020</h2>
+                    </header>
+                    <ul class="list-style-none change-log">
+                      <li class="d-flex flex-items-start mb-2">
+                          <div class="change-badge change-badge-build">Build</div>
+                          <div class="change-description">\\S1\Install\PulseID\bin\JenkinsBuilds\PulseID-Build\2020.293\416</div>
+                       </li>
+                       <li class="d-flex flex-items-start mb-2">
+                          <div class="change-badge change-badge-fixed">Fixed</div>
+                          <div class="change-description">When editing an order the quantity is always 0 | <a href="https://app.asana.com/0/1178545619648021/1198019970907217/f">Asana</a></div>
+                       </li>
+                       <li class="d-flex flex-items-start mb-2">
+                          <div class="change-badge change-badge-fixed">Fixed</div>
+                          <div class="change-description">MWW - Need to combine multiple jobs into a single post | <a href="https://app.asana.com/0/1178545619648021/1198176530019075/f">Asana</a> | <a href="https://github.com/pulsemicro/PulseID/issues/1014">GitHub #1014</a></div>
+                       </li>
+                       <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-improved">Improved</div>
+                        <div class="change-description">Increase the message column length of the exceptions table</div>
+                    </li>
+                    </ul>
+                 </section>
+               <section class="release-note position-relative container-new py-6 px-3 text-left">
+                  <header class="timeline-decorator d-flex flex-items-center mb-3">
+                     <span class="version-badge d-inline-block bg-purple p-1 rounded-1 mr-2 text-bold">3.0.0</span>
+                     <span class="d-inline-block bg-yellow text-gray-dark p-1 rounded-1 mr-2 text-bold">2020.289.3.413 13129d9</span>
+                     <h2 class="f3-light css-truncate css-truncate-target">October 15th 2020</h2>
+                  </header>
+                  <ul class="list-style-none change-log">
+                    <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-build">Build</div>
+                        <div class="change-description">\\S1\Install\PulseID\bin\JenkinsBuilds\PulseID-Build\2020.289\413</div>
+                     </li>
+                     <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-fixed">Fixed</div>
+                        <div class="change-description">Error creating templates for a new company | <a href="https://app.asana.com/0/17869152079429/1198183425791003/f">Asana</a></div>
+                     </li>
+                     <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-fixed">Fixed</div>
+                        <div class="change-description">Not saving edits to color profiles by color in the configuration of the products | <a href="https://app.asana.com/0/1178330995796571/1198214776861220/f">Asana</a></div>
+                     </li>
+                     <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-fixed">Fixed</div>
+                        <div class="change-description">Color Profile Not Found if a Color Profile by Design is Not Configured | <a href="https://app.asana.com/0/1178330995796571/1198214776861213/f">Asana</a></div>
+                     </li>
+                     <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-fixed">Fixed</div>
+                        <div class="change-description">Problem with bleed settings | <a href="https://app.asana.com/0/1178545619648021/1198214776861232/f">Asana</a></div>
+                     </li>
+                     <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-fixed">Fixed</div>
+                        <div class="change-description">Incorrect bleed amount | <a href="https://app.asana.com/0/1178545619648021/1198223458856877/f">Asana</a></div>
+                     </li>
+                     <li class="d-flex flex-items-start mb-2">
+                        <div class="change-badge change-badge-added">Added</div>
+                        <div class="change-description">MWW - Need to combine multiple jobs into a single post | <a href="https://app.asana.com/0/17869152079429/1198183425791003/f">Asana</a> | <a href="https://github.com/pulsemicro/PulseID/issues/1014">GitHub #1014</a></div>
+                     </li>
+                  </ul>
+               </section>
+               <section class="release-note position-relative container-new py-6 px-3 text-left">
+                <header class="timeline-decorator d-flex flex-items-center mb-3">
+                   <span class="version-badge d-inline-block bg-purple p-1 rounded-1 mr-2 text-bold">3.0.0</span>
+                   <span class="d-inline-block bg-yellow text-gray-dark p-1 rounded-1 mr-2 text-bold">2020.287.3.409 23f9cf2</span>
+                   <h2 class="f3-light css-truncate css-truncate-target">October 13th 2020</h2>
+                </header>
+                <ul class="list-style-none change-log">
+                  <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-build">Build</div>
+                      <div class="change-description">\\S1\Install\PulseID\bin\JenkinsBuilds\PulseID-Build\2020.287\409</div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">World Emblem order sender throws a Bad Api error | <a href="https://app.asana.com/0/17869152079429/1198137558336707/f">Asana</a> | <a href="https://github.com/pulsemicro/PulseID/issues/1013">GitHub #1013</a></div>
+                   </li>
 
-  <link rel="stylesheet" type="text/css" href=/styles.css>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Why are some jobs duplicated in the jobs view | <a href="https://app.asana.com/0/1178330995796571/1198180530874857/f">Asana</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Order Processor Errors Processing an Invalid File | <a href="https://app.asana.com/0/1178545619648021/1195772375101633/f">Asana</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Do not rename the preview file that is used by the admin | <a href="https://app.asana.com/0/1178545619648021/1197633147114721/f">Asana</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-fixed">Fixed</div>
+                    <div class="change-description">Not able to set a second product mapping code for a fulfillment center | <a href="https://app.asana.com/0/1178545619648021/1195296182454920/f">Asana</a></div>
+                 </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Saving Printer Profiles based on product and design | <a href="https://app.asana.com/0/1178330995796571/1196202755480473/f">Asana</a></div>
+                </li>
+               <li class="d-flex flex-items-start mb-2">
+                  <div class="change-badge change-badge-added">Added</div>
+                  <div class="change-description">Have Order Processor Errors Go to Exceptions | <a href="https://app.asana.com/0/1178545619648021/1187013838727313/f">Asana</a></div>
+               </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">When editing an order the quantity is always 0 | <a href="https://app.asana.com/0/1178545619648021/1198019970907217/f">Asana</a></div>
+                 </li>
 
-  <link rel="icon" sizes="any" mask href="https://github.githubassets.com/pinned-octocat.svg">
-  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
-  </head>
-  <body>
-    <header>
-  <div class="container-new py-6 px-3 text-center">
-    <a href="/">
-      <img src="/images/desktop-icon.svg" alt="GitHub Desktop" width="96" height="96">
-    </a>
-    <ul class="nav list-style-none d-flex flex-justify-center f4">
-  <li>
-    <a class="d-inline-block m-2" href="/">Overview</a>
-  </li>
-  <li>
-    <a class="d-inline-block m-2 current" href="/release-notes/">Release Notes</a>
-  </li>
-  <li>
-    <a class="d-inline-block m-2" href="https://help.github.com/desktop/">Help</a>
-  </li>
-</ul>
-
-  </div>
-</header>
-
-    <div class="container-new">
-  <div class="col-md-8 mx-auto">
-    <div class="p-3 mb-4 border-bottom border-translucent-white">
-  <h1 class="f1-light text-white">
-    Release notes for GitHub Desktop
-  </h1>
-</div>
-
-    <div id="release-notes"></div>
-  </div>
-</div>
-
-<script src="/javascript/jquery.min.js" charset="utf-8"></script>
-<script src="/javascript/moment.min.js" charset="utf-8"></script>
-<script src="/javascript/desktop-releases.js" charset="utf-8"></script>
-
-
-
-    <hr class="my-6 my-md-10 mx-auto col-md-1">
-
-<div class="col-md-6 mx-auto text-center text-gray-lighter">
-  <p>
-    <a href="https://help.github.com/articles/github-terms-of-service/" class="mr-4">Terms</a>
-    <a href="https://help.github.com/articles/github-privacy-statement/" class="mr-4">Privacy Policy</a>
-    <a href="/eula"  class="mr-4">EULA</a>
-    <a href="/release-notes/">Release Notes</a>
-  </p>
-</div>
-
-<footer class="mb-6 px-3 text-gray text-center alt-text-small">
-  <p class="copyright">© 2020 Pulse Microsystems Ltd.</p>
-</footer>
-
-  </body>
+                </ul>
+             </section>
+             <section class="release-note position-relative container-new py-6 px-3 text-left">
+                <header class="timeline-decorator d-flex flex-items-center mb-3">
+                   <span class="version-badge d-inline-block bg-purple p-1 rounded-1 mr-2 text-bold">3.0.0</span>
+                   <span class="d-inline-block bg-yellow text-gray-dark p-1 rounded-1 mr-2 text-bold">2020.281.3.406 ddde63c</span>
+                   <h2 class="f3-light css-truncate css-truncate-target">October 7th 2020</h2>
+                </header>
+                <ul class="list-style-none change-log">
+                  <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-build">Build</div>
+                      <div class="change-description">\\S1\Install\PulseID\bin\JenkinsBuilds\PulseID-Build\2020.281\406</div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Error in About Page | <a href="https://app.asana.com/0/1178545619648021/1197535624467529/f">Asana</a> | <a href="https://github.com/pulsemicro/PulseID/issues/1004">GitHub #1004</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-fixed">Fixed</div>
+                    <div class="change-description">FileSender is not working | <a href="https://github.com/pulsemicro/PulseID/issues/1006">GitHub #1006</a></div>
+                 </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Print button disappears after sending to the printer | <a href="https://app.asana.com/0/1178330995796571/1196516599911587/f">Asana</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Make sure the barcode field has focus when you load a workstation page | <a href="https://app.asana.com/0/1178330995796571/1192838006078338/f">Asana</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                      <div class="change-badge change-badge-fixed">Fixed</div>
+                      <div class="change-description">Order processor is reading the incorrect column for the product code in this order | <a href="https://app.asana.com/0/1178545619648021/1197770374011491/f">Asana</a></div>
+                   </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-fixed">Fixed</div>
+                    <div class="change-description">You need to restart the design generator if 3pl central changes are made | <a href="https://app.asana.com/0/1178545619648021/1193565299595807/f">Asana</a></div>
+                 </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-fixed">Fixed</div>
+                    <div class="change-description">Not populating fulfillment center/3PL data for these fields | <a href="https://app.asana.com/0/1178545619648021/1194493036879489/f">Asana</a></div>
+                </li>
+               <li class="d-flex flex-items-start mb-2">
+                  <div class="change-badge change-badge-fixed">Fixed</div>
+                  <div class="change-description">Error in About Page | <a href="https://app.asana.com/0/1178545619648021/1197535624467529/f">Asana</a></div>
+               </li>
+               <li class="d-flex flex-items-start mb-2">
+                <div class="change-badge change-badge-fixed">Fixed</div>
+                <div class="change-description">Not able to enter the bleed amount | <a href="https://app.asana.com/0/1178545619648021/1197535624467521/f">Asana</a></div>
+             </li>
+             <li class="d-flex flex-items-start mb-2">
+                <div class="change-badge change-badge-fixed">Fixed</div>
+                <div class="change-description">Not able to delete media | <a href="https://app.asana.com/0/1178545619648021/1196689611045209/f">Asana</a></div>
+             </li>
+             <li class="d-flex flex-items-start mb-2">
+                <div class="change-badge change-badge-fixed">Fixed</div>
+                <div class="change-description">Carriers duplicated in shipping mode dropdown list | <a href="https://app.asana.com/0/1178545619648021/1196689611045192/f">Asana</a></div>
+             </li>
+             <li class="d-flex flex-items-start mb-2">
+                <div class="change-badge change-badge-fixed">Fixed</div>
+                <div class="change-description">Not able to delete a field mapping | <a href="https://app.asana.com/0/1178545619648021/1196689611045203/f">Asana</a></div>
+             </li>
+             <li class="d-flex flex-items-start mb-2">
+                <div class="change-badge change-badge-fixed">Fixed</div>
+                <div class="change-description">Why is this CSV order file not processing | <a href="https://app.asana.com/0/1178545619648021/1197668365433817/f">Asana</a></div>
+             </li>
+             <li class="d-flex flex-items-start mb-2">
+                <div class="change-badge change-badge-improved">Improved</div>
+                <div class="change-description">Change the name Medias to Media | <a href="https://app.asana.com/0/1178545619648021/1196689611045216/f">Asana</a></div>
+             </li>
+                   <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Integrate Color Profile by Product Color into Stations | <a href="https://app.asana.com/0/1178330995796571/1196335493756265/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Saving Printer Profiles based on product and design | <a href="https://app.asana.com/0/1178330995796571/1196202755480473/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Product locations images support AWS | <a href="https://app.asana.com/0/1178330995796571/1196092351427249/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Edit Print Settings on Print Station | <a href="https://app.asana.com/0/1178330995796571/1194424829094993/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Add media type Wrapped Canvas | <a href="https://app.asana.com/0/1178545619648021/1196831102593161/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Combine Multiple Line Items (Jobs) into a Single Order for 3PL and External Fulfilment Centers | <a href="https://app.asana.com/0/1178545619648021/1194037288905033/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">When editing or creating a new order, set Quantity and Total Pieces to be the same value | <a href="https://app.asana.com/0/1178545619648021/1192341785514801/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Bleed functionally | <a href="https://app.asana.com/0/1178545619648021/1196831102593166/f">Asana</a></div>
+                 </li>
+                 <li class="d-flex flex-items-start mb-2">
+                    <div class="change-badge change-badge-added">Added</div>
+                    <div class="change-description">Add a media type column to the medias view | <a href="https://app.asana.com/0/1178545619648021/1196689611045198/f">Asana</a></div>
+                 </li>
+                </ul>
+             </section>
+            </div>
+         </div>
+      </div>
+      <script src="/javascript/jquery.min.js" charset="utf-8"></script>
+      <script src="/javascript/moment.min.js" charset="utf-8"></script>
+      <script src="/javascript/desktop-releases.js" charset="utf-8"></script>
+      <hr class="my-6 my-md-10 mx-auto col-md-1">
+      <div class="col-md-6 mx-auto text-center text-gray-lighter">
+         <p>
+            <a href="https://help.github.com/articles/github-terms-of-service/" class="mr-4">Terms</a>
+            <a href="https://help.github.com/articles/github-privacy-statement/" class="mr-4">Privacy Policy</a>
+            <a href="/eula"  class="mr-4">EULA</a>
+            <a href="/release-notes/">Release Notes</a>
+         </p>
+      </div>
+      <footer class="mb-6 px-3 text-gray text-center alt-text-small">
+         <p class="copyright">© 2020 Pulse Microsystems Ltd.</p>
+      </footer>
+   </body>
 </html>
